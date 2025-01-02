@@ -9,11 +9,11 @@ const Main: React.FC<any> = ({ navigation }) => {
 
     return (
         <View style={mainStyle.main}>
-            <Text>ЫЫ</Text>
+            <Text>Главная</Text>
             <TouchableOpacity
-                onPress={() => loadScene('сцена')}
+                onPress={() => loadScene('Photos')}
             >
-                <Text ></Text>
+                <Text >Страница фотографий</Text>
             </TouchableOpacity>
         </View>
     );
