@@ -11,7 +11,7 @@ const Images = [
     },
     {
         id: 3,
-        description: 'Разетка',
+        description: 'Рарараразетка',
         source: require('./photos/3.jpg'),
     },
     {
