@@ -9,13 +9,20 @@ const Main: React.FC<any> = ({ navigation }) => {
 
     return (
         <View style={mainStyle.main}>
-            <Text>Главная</Text>
-            <TouchableOpacity
-                onPress={() => loadScene('Photos')}
-            >
-                <Text >Страница фотографий</Text>
-            </TouchableOpacity>
-        </View>
+            <Text style={mainStyle.title}>Главная</Text>
+            <View style={mainStyle.mainMenu}>
+                <TouchableOpacity style={mainStyle.menuItem}
+                    onPress={() => loadScene('Photos')}
+                >
+                    <Text style={mainStyle.title} > Страница фотографий</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={mainStyle.menuItem}
+                    onPress={() => loadScene('Music')}
+                >
+                    <Text style={mainStyle.title}>Страница музыки</Text>
+                </TouchableOpacity>
+            </View>
+        </View >
     );
 };
 
