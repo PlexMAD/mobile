@@ -41,6 +41,7 @@ const Photos: React.FC = () => {
                 <Text style={mainStyle.title}>Фотографии</Text>
             </View>
             <FlatList
+                contentContainerStyle={mainStyle.photoList}
                 data={photos}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => <PhotoItem PhotoProps={item} />}

@@ -10,9 +10,9 @@ interface PhotoProp {
 
 const PhotoItem: React.FC<{ PhotoProps: PhotoProp }> = ({ PhotoProps }) => {
     return (
-        <View style={mainStyle.PhotoItem}>
-            <Image source={PhotoProps.source} style={{ width: 100, height: 100 }} />
-            <Text>{PhotoProps.description}</Text>
+        <View style={mainStyle.PhotoItem} >
+            <Image source={PhotoProps.source} style={{ width: 100, height: 100, alignSelf: 'center' }} />
+            <Text style={mainStyle.photoDesc}>{PhotoProps.description}</Text>
         </View>
     );
 };

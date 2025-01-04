@@ -50,7 +50,7 @@ const MusicItem: React.FC<{ MusicProps: MusicProp }> = ({ MusicProps }) => {
 
     return (
         <View style={mainStyle.MusicItem}>
-            <Text>{MusicProps.description}</Text>
+            <Text style={mainStyle.musicDesc}>{MusicProps.description}</Text>
             <Button
                 title={isPlaying ? "Остановить" : "Воспроизвести"}
                 onPress={isPlaying ? stopSound : playSound}

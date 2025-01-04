@@ -3,6 +3,8 @@ import * as Font from 'expo-font'
 import AppLoading from 'expo-app-loading'
 import Main from './components/Main';
 import NavigateStack from './navigation';
+import { ImageBackground } from 'react-native';
+import { mainStyle } from './styles/style';
 const fonts = () => Font.loadAsync({
   'Montserrat': require('./assets/fonts/Montserrat-Bold.ttf')
 })

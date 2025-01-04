@@ -13,6 +13,7 @@ const Music: React.FC = () => {
                 <Text style={mainStyle.title}>Фотографии</Text>
             </View>
             <FlatList
+                contentContainerStyle={mainStyle.musicList}
                 data={MusicList}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => <MusicItem MusicProps={item} />}
