@@ -10,7 +10,7 @@ const Music: React.FC = () => {
     return (
         <View style={mainStyle.main}>
             <View>
-                <Text style={mainStyle.title}>Фотографии</Text>
+                <Text style={mainStyle.title}>Музыка</Text>
             </View>
             <FlatList
                 contentContainerStyle={mainStyle.musicList}
